@@ -1,0 +1,28 @@
+<div class="container" style="width: 1900px">
+  <h1>Packages</h1>
+  <br />
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Studio</th>
+        <th>Title</th>
+        <th>Territory</th>
+        <th>Street Date</th>
+        <th>Status</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let title of titles">
+        <th>{{ title.id }}</th>
+        <td>{{ title.studio }}</td>
+        <td>{{ title.title }}</td>
+        <td>{{ title.territory }}</td>
+        <td>{{ title.streetdate }}</td>
+        <td>{{ title.status }}</td>
+        <td><button routerLink="/title-detail/{{ title.id }}">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

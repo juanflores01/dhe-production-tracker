@@ -1,0 +1,22 @@
+DONE > 
+Create Title list view.
+Create Title Detail view.
+
+Create data model.
+Create single hard-coded data object in titles component.
+Create data binding in list view.
+
+Create mock data file with multiple objects.
+Refactor title list with ngFor to display the objects in mock data file.
+
+Create routing for list view.
+Create routing for details view.
+Create a service to fetch data.
+Wire up a quick list page item to details page get method.
+
+PENDING > 
+In the List view, enable details button routes to Title Details page.
+Figure out default landing page and what should go there: blank page? list view?  login page?
+Create another mock data file for the details page.
+Create navigation with routing.
+

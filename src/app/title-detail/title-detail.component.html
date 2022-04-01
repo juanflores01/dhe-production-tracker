@@ -1,0 +1,169 @@
+<div class="container" style="width: 1900px">
+  <!-- <h1>Details Page - Under Construction</h1> -->
+  <!-- <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Studio</th>
+        <th>Title</th>
+        <th>Territory</th>
+        <th>Street Date</th>
+        <th>Status</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>{{ title?.id }}</th>
+        <td>{{ title?.studio }}</td>
+        <td>{{ title?.title }}</td>
+        <td>{{ title?.territory }}</td>
+        <td>{{ title?.streetdate }}</td>
+        <td>{{ title?.status }}</td>
+        <td><button type="button" (click)="goBack()">go back</button></td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <h2>Details for {{ title?.title }}</h2>
+
+  <br />
+
+  <h4>Milestones</h4>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>SKU</th>
+        <th>QA</th>
+        <th>QA Vendor</th>
+        <th>...Status</th>
+        <th>Portal</th>
+        <th>...Status</th>
+        <th>Release</th>
+        <th>...Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ENG</td>
+        <td>1/1/22</td>
+        <td>BluFocus</td>
+        <td>Passed</td>
+        <td>1/15/22</td>
+        <td>Delivered</td>
+        <td>1/30/22</td>
+        <td>Pending</td>
+      </tr>
+      <tr>
+        <td>BRA</td>
+        <td>2/1/22</td>
+        <td>BluFocus</td>
+        <td>Failed</td>
+        <td>2/15/22</td>
+        <td>Pending</td>
+        <td>2/30/22</td>
+        <td>Pending</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+
+  <h4>Value Added Materials</h4>
+  <p>{{ vam?.name }}</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>VAM</th>
+        <th>Language</th>
+        <th>Source</th>
+        <tH>Title Card</tH>
+        <th>Legal Card</th>
+        <th>Deliverable</th>
+        <th>Proxy</th>
+        <th>ITT</th>
+        <th>Thumbnail</th>
+        <th>Delivery Date</th>
+        <th>Status</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- template goes here -->
+        <!-- <td>{{ vam?.id }}</td> -->
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Making of {{ title?.title }}</td>
+        <td>ENH</td>
+        <td>bonus-reel.mov</td>
+        <td>X</td>
+        <td>X</td>
+        <td>making-of-{{ title?.title | lowercase }}.mov</td>
+        <td>making-of-{{ title?.title | lowercase }}.proxy</td>
+        <td>making-of-{{ title?.title | lowercase }}.itt</td>
+        <td>X</td>
+        <td>11/2/2022</td>
+        <td>In Progress</td>
+        <td><button>View</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Director's Commentary</td>
+        <td>BRA</td>
+        <td>feature-with-commentaries.mov</td>
+        <td>X</td>
+        <td>X</td>
+        <td>feature-dir-comm-reel.mov</td>
+        <td>feature-dir-comm-reel.proxy</td>
+        <td>feature-dir-comm-reel.itt</td>
+        <td>X</td>
+        <td>2/15/2022</td>
+        <td>Complete</td>
+        <td><button>View</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Deleted Scenes</td>
+        <td>ENH</td>
+        <td>deleted-scenes-reel-a.mov</td>
+        <td>X</td>
+        <td>X</td>
+        <td>deleted-scenes.mov</td>
+        <td>deleted-scenes.proxy</td>
+        <td>deleted-scenes-reel-a.itt</td>
+        <td>X</td>
+        <td>2/15/2022</td>
+        <td>Complete</td>
+        <td><button>View</button></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Picture of Peter Weller</td>
+        <td>---</td>
+        <td>peter-weller.png</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+        <td>---</td>
+        <td>X</td>
+        <td>2/15/2022</td>
+        <td>Complete</td>
+        <td><button>View</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+
+  <h4>Packaging</h4>
+  <p>Menu Audio</p>
+  <p>Background images</p>
+  <p>Marketing Copy</p>
+  <p>Metadata</p>
+  <br />
+
+  <br />
+</div>
