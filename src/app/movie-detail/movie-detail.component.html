@@ -1,35 +1,9 @@
 <div class="container" style="width: 1900px">
-  <!-- <h1>Details Page - Under Construction</h1> -->
-  <!-- <table class="table">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Studio</th>
-        <th>Title</th>
-        <th>Territory</th>
-        <th>Street Date</th>
-        <th>Status</th>
-        <th>Details</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>{{ title?.id }}</th>
-        <td>{{ title?.studio }}</td>
-        <td>{{ title?.title }}</td>
-        <td>{{ title?.territory }}</td>
-        <td>{{ title?.streetdate }}</td>
-        <td>{{ title?.status }}</td>
-        <td><button type="button" (click)="goBack()">go back</button></td>
-      </tr>
-    </tbody>
-  </table> -->
-
-  <h2>Details for {{ title?.title }}</h2>
+  <h2>Details for {{ movie?.name }}</h2>
 
   <br />
 
-  <h4>Milestones</h4>
+  <!-- <h4>Milestones</h4>
 
   <table class="table">
     <thead>
@@ -67,10 +41,10 @@
       </tr>
     </tbody>
   </table>
-  <br />
+  <br /> -->
 
   <h4>Value Added Materials</h4>
-  <p>{{ vam?.name }}</p>
+  <p>Test binding for VAM Name: {{ movie?.vam?.language }} (end of line)</p>
   <table class="table">
     <thead>
       <tr>
@@ -91,25 +65,36 @@
     </thead>
     <tbody>
       <tr>
-        <!-- template goes here -->
-        <!-- <td>{{ vam?.id }}</td> -->
+        <td>{{ movie?.vam?.id }}</td>
+        <td>{{ movie?.vam?.name }}</td>
+        <td>{{ movie?.vam?.language }}</td>
+        <td>{{ movie?.vam?.source }}</td>
+        <td>{{ movie?.vam?.titlecard }}</td>
+        <td>{{ movie?.vam?.legalcard }}</td>
+        <td>{{ movie?.vam?.deliverable }}</td>
+        <td>{{ movie?.vam?.proxy }}</td>
+        <td>{{ movie?.vam?.itt }}</td>
+        <td>{{ movie?.vam?.thumbnail }}</td>
+        <td>{{ movie?.vam?.status }}</td>
+        <td>{{ movie?.vam?.status }}</td>
+        <td><button>View</button></td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>1</td>
-        <td>Making of {{ title?.title }}</td>
+        <td>Making of {{ movie?.name }}</td>
         <td>ENH</td>
         <td>bonus-reel.mov</td>
         <td>X</td>
         <td>X</td>
-        <td>making-of-{{ title?.title | lowercase }}.mov</td>
-        <td>making-of-{{ title?.title | lowercase }}.proxy</td>
-        <td>making-of-{{ title?.title | lowercase }}.itt</td>
+        <td>making-of-{{ movie?.name | lowercase }}.mov</td>
+        <td>making-of-{{ movie?.name | lowercase }}.proxy</td>
+        <td>making-of-{{ movie?.name | lowercase }}.itt</td>
         <td>X</td>
         <td>11/2/2022</td>
         <td>In Progress</td>
         <td><button>View</button></td>
-      </tr>
-      <tr>
+      </tr> -->
+      <!-- <tr>
         <td>2</td>
         <td>Director's Commentary</td>
         <td>BRA</td>
@@ -153,17 +138,17 @@
         <td>2/15/2022</td>
         <td>Complete</td>
         <td><button>View</button></td>
-      </tr>
+      </tr> -->
     </tbody>
   </table>
   <br />
 
-  <h4>Packaging</h4>
+  <!-- <h4>Packaging</h4>
   <p>Menu Audio</p>
   <p>Background images</p>
   <p>Marketing Copy</p>
   <p>Metadata</p>
   <br />
 
-  <br />
+  <br /> -->
 </div>

@@ -9,8 +9,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { FooterComponent } from './footer/footer.component';
-import { TitleListComponent } from './title-list/title-list.component';
-import { TitleDetailComponent } from './title-detail/title-detail.component';
+import { MovieListComponent } from './movie-list/movie-list.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -19,8 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     NavigationBarComponent,
     FooterComponent,
-    TitleListComponent,
-    TitleDetailComponent,
+    MovieListComponent,
+    MovieDetailComponent,
   ],
   imports: [
     BrowserModule,

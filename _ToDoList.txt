@@ -7,7 +7,7 @@ Create single hard-coded data object in titles component.
 Create data binding in list view.
 
 Create mock data file with multiple objects.
-Refactor title list with ngFor to display the objects in mock data file.
+Refactor movie list with ngFor to display the objects in mock data file.
 
 Create routing for list view.
 Create routing for details view.
