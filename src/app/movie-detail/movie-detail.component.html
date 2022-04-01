@@ -44,7 +44,7 @@
   <br /> -->
 
   <h4>Value Added Materials</h4>
-  <p>Test binding for VAM Name: {{ movie?.vam?.language }} (end of line)</p>
+
   <table class="table">
     <thead>
       <tr>
@@ -60,85 +60,23 @@
         <th>Thumbnail</th>
         <th>Delivery Date</th>
         <th>Status</th>
-        <th>Details</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>{{ movie?.vam?.id }}</td>
-        <td>{{ movie?.vam?.name }}</td>
-        <td>{{ movie?.vam?.language }}</td>
-        <td>{{ movie?.vam?.source }}</td>
-        <td>{{ movie?.vam?.titlecard }}</td>
-        <td>{{ movie?.vam?.legalcard }}</td>
-        <td>{{ movie?.vam?.deliverable }}</td>
-        <td>{{ movie?.vam?.proxy }}</td>
-        <td>{{ movie?.vam?.itt }}</td>
-        <td>{{ movie?.vam?.thumbnail }}</td>
-        <td>{{ movie?.vam?.status }}</td>
-        <td>{{ movie?.vam?.status }}</td>
-        <td><button>View</button></td>
+      <tr *ngFor="let item of movie?.vam">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.language }}</td>
+        <td>{{ item.source }}</td>
+        <td>{{ item.titlecard }}</td>
+        <td>{{ item.legalcard }}</td>
+        <td>{{ item.deliverable }}</td>
+        <td>{{ item.proxy }}</td>
+        <td>{{ item.itt }}</td>
+        <td>{{ item.thumbnail }}</td>
+        <td>{{ item.status }}</td>
+        <td>{{ item.status }}</td>
       </tr>
-      <!-- <tr>
-        <td>1</td>
-        <td>Making of {{ movie?.name }}</td>
-        <td>ENH</td>
-        <td>bonus-reel.mov</td>
-        <td>X</td>
-        <td>X</td>
-        <td>making-of-{{ movie?.name | lowercase }}.mov</td>
-        <td>making-of-{{ movie?.name | lowercase }}.proxy</td>
-        <td>making-of-{{ movie?.name | lowercase }}.itt</td>
-        <td>X</td>
-        <td>11/2/2022</td>
-        <td>In Progress</td>
-        <td><button>View</button></td>
-      </tr> -->
-      <!-- <tr>
-        <td>2</td>
-        <td>Director's Commentary</td>
-        <td>BRA</td>
-        <td>feature-with-commentaries.mov</td>
-        <td>X</td>
-        <td>X</td>
-        <td>feature-dir-comm-reel.mov</td>
-        <td>feature-dir-comm-reel.proxy</td>
-        <td>feature-dir-comm-reel.itt</td>
-        <td>X</td>
-        <td>2/15/2022</td>
-        <td>Complete</td>
-        <td><button>View</button></td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Deleted Scenes</td>
-        <td>ENH</td>
-        <td>deleted-scenes-reel-a.mov</td>
-        <td>X</td>
-        <td>X</td>
-        <td>deleted-scenes.mov</td>
-        <td>deleted-scenes.proxy</td>
-        <td>deleted-scenes-reel-a.itt</td>
-        <td>X</td>
-        <td>2/15/2022</td>
-        <td>Complete</td>
-        <td><button>View</button></td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Picture of Peter Weller</td>
-        <td>---</td>
-        <td>peter-weller.png</td>
-        <td>---</td>
-        <td>---</td>
-        <td>---</td>
-        <td>---</td>
-        <td>---</td>
-        <td>X</td>
-        <td>2/15/2022</td>
-        <td>Complete</td>
-        <td><button>View</button></td>
-      </tr> -->
     </tbody>
   </table>
   <br />

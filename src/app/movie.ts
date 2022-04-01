@@ -6,7 +6,7 @@ export interface Movie {
   streetdate: string;
   status: string;
   vamid: number;
-  vam: Vam;
+  vam: Vam[];
 }
 
 export interface Vam {

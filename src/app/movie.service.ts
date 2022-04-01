@@ -24,12 +24,6 @@ export class MovieService {
 
   getTitle(id: number): Observable<Movie> {
     const url = `${this.moviesUrl}/${id}`;
-    this.getTitleVam(id);
     return this.http.get<Movie>(url);
-  }
-
-  getTitleVam(id: number): Observable<Vam> {
-    const url = `${this.moviesUrl}/${id}`;
-    return this.http.get<Vam>(url);
   }
 }
