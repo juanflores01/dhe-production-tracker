@@ -21,5 +21,6 @@ Create another mock data file for the details page.
 Create navigation with routing.
 
 COMMENT > 
-Created Github repo, pushed code.
+Created Github repo, pushed code. 
+Succesfully pushed to Github.
 
