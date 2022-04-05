@@ -20,3 +20,6 @@ Figure out default landing page and what should go there: blank page? list view?
 Create another mock data file for the details page.
 Create navigation with routing.
 
+COMMENT > 
+Created Github repo, pushed code.
+
