@@ -1,92 +1,128 @@
 <div class="container" style="width: 1900px">
-  <h2>Details for {{ movie?.name }}</h2>
+  <h1>Details for {{ movie?.name }}</h1>
 
   <br />
+  <h4>General Info (hard-coded)</h4>
+  <table class="table">
+    <thead>
+      <th>Item</th>
+      <th>--</th>
+      <th>--</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Studio</td>
+        <td>Emotion Pictures</td>
+        <td>--</td>
+      </tr>
+      <tr>
+        <td>Studio Contact</td>
+        <td>John Doe</td>
+        <td>818 555-1234</td>
+      </tr>
+      <tr>
+        <td>Project ID</td>
+        <td>DHE 1234</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <td>Project Status</td>
+        <td>In Production</td>
+        <td>--</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
 
-  <!-- <h4>Milestones</h4>
+  <h4>Milestones</h4>
 
   <table class="table">
     <thead>
       <tr>
         <th>SKU</th>
-        <th>QA</th>
         <th>QA Vendor</th>
-        <th>...Status</th>
+        <th>QA Status</th>
         <th>Portal</th>
-        <th>...Status</th>
+        <th>Portal Status</th>
         <th>Release</th>
-        <th>...Status</th>
+        <th>Release Status</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>ENG</td>
-        <td>1/1/22</td>
-        <td>BluFocus</td>
-        <td>Passed</td>
-        <td>1/15/22</td>
-        <td>Delivered</td>
-        <td>1/30/22</td>
-        <td>Pending</td>
-      </tr>
-      <tr>
-        <td>BRA</td>
-        <td>2/1/22</td>
-        <td>BluFocus</td>
-        <td>Failed</td>
-        <td>2/15/22</td>
-        <td>Pending</td>
-        <td>2/30/22</td>
-        <td>Pending</td>
+      <tr *ngFor="let item of movie?.milestones">
+        <td>{{ item.sku }}</td>
+        <td>{{ item.qavendor }}</td>
+        <td>{{ item.qastatus }}</td>
+        <td>{{ item.portal }}</td>
+        <td>{{ item.portalstatus }}</td>
+        <td>{{ item.release }}</td>
+        <td>{{ item.releasestatus }}</td>
       </tr>
     </tbody>
   </table>
-  <br /> -->
+  <br />
 
-  <h4>Value Added Materials</h4>
+  <app-movie-detail-vam [childMovie]="currentMovie"> </app-movie-detail-vam>
 
+  <h4>Packaging (hard-coded)</h4>
   <table class="table">
     <thead>
-      <tr>
-        <th>#</th>
-        <th>VAM</th>
-        <th>Language</th>
-        <th>Source</th>
-        <tH>Title Card</tH>
-        <th>Legal Card</th>
-        <th>Deliverable</th>
-        <th>Proxy</th>
-        <th>ITT</th>
-        <th>Thumbnail</th>
-        <th>Delivery Date</th>
-        <th>Status</th>
-      </tr>
+      <th>Item</th>
+      <th>Status</th>
+      <th>Note</th>
     </thead>
     <tbody>
-      <tr *ngFor="let item of movie?.vam">
-        <td>{{ item.id }}</td>
-        <td>{{ item.name }}</td>
-        <td>{{ item.language }}</td>
-        <td>{{ item.source }}</td>
-        <td>{{ item.titlecard }}</td>
-        <td>{{ item.legalcard }}</td>
-        <td>{{ item.deliverable }}</td>
-        <td>{{ item.proxy }}</td>
-        <td>{{ item.itt }}</td>
-        <td>{{ item.thumbnail }}</td>
-        <td>{{ item.status }}</td>
-        <td>{{ item.status }}</td>
+      <tr>
+        <td>Menu Audio</td>
+        <td>Pending</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <td>Background Images</td>
+        <td>Pending</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <td>Marketing Copy</td>
+        <td>Pending</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <td>Metadata</td>
+        <td>Pending</td>
+        <td>n/a</td>
       </tr>
     </tbody>
   </table>
+
   <br />
 
-  <!-- <h4>Packaging</h4>
-  <p>Menu Audio</p>
-  <p>Background images</p>
-  <p>Marketing Copy</p>
-  <p>Metadata</p>
-  <br />
+  <h4>Sources (hard-coded)</h4>
+  <table class="table">
+    <thead>
+      <th>Item</th>
+      <th>Status</th>
+      <th>Note</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>bonus-features-reel.mov</td>
+        <td>delivered</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <td>feature-director-comm.mov</td>
+        <td>Pending</td>
+        <td>n/a</td>
+      </tr>
+      <tr>
+        <td>trailers.mov</td>
+        <td>delivered</td>
+        <td>n/a</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <br /> -->
+  <br />
+  <br />
 </div>

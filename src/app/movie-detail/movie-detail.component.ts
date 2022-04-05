@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -15,6 +15,11 @@ import { FooterComponent } from '../footer/footer.component';
 export class MovieDetailComponent implements OnInit {
   movie: Movie | undefined;
 
+  // currentItem = 'This is from the Parent class';
+  currentMovie = {};
+
+  // currentMovie2: Movie | undefined;
+
   constructor(
     private route: ActivatedRoute,
     private movieService: MovieService,
@@ -27,7 +32,9 @@ export class MovieDetailComponent implements OnInit {
 
   getTitle(): void {
     const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
-    this.movieService.getTitle(id).subscribe((movie) => (this.movie = movie));
+    this.currentMovie = this.movieService
+      .getTitle(id)
+      .subscribe((movie) => (this.movie = movie));
   }
 
   goBack(): void {

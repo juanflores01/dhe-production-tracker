@@ -1,0 +1,41 @@
+<p>movie-detail-vam works!</p>
+<p>Today's item: {{ childMovie }}</p>
+<h4>Value Added Materials</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Group</th>
+      <th>VAM</th>
+      <th>Type</th>
+      <th>Language</th>
+      <th>Source</th>
+      <tH>Title Card</tH>
+      <th>Legal Card</th>
+      <th>Deliverable</th>
+      <th>Proxy</th>
+      <th>ITT</th>
+      <th>Thumbnail</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of childMovie?.vam">
+      <td>{{ item.id }}</td>
+      <td>{{ item.group }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.type }}</td>
+      <td>{{ item.language }}</td>
+      <td>{{ item.source }}</td>
+      <td>{{ item.titlecard }}</td>
+      <td>{{ item.legalcard }}</td>
+      <td>{{ item.deliverable }}</td>
+      <td>{{ item.proxy }}</td>
+      <td>{{ item.itt }}</td>
+      <td>{{ item.thumbnail }}</td>
+      <td>{{ item.status }}</td>
+    </tr>
+  </tbody>
+</table>
+<br />

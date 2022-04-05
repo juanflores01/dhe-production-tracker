@@ -13,6 +13,10 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { MovieDetailVamComponent } from './movie-detail-vam/movie-detail-vam.component';
+import { MovieDetailMilestonesComponent } from './movie-detail-milestones/movie-detail-milestones.component';
+import { MovieDetailPackagingComponent } from './movie-detail-packaging/movie-detail-packaging.component';
+import { MovieDetailSourcesComponent } from './movie-detail-sources/movie-detail-sources.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     MovieListComponent,
     MovieDetailComponent,
+    MovieDetailVamComponent,
+    MovieDetailMilestonesComponent,
+    MovieDetailPackagingComponent,
+    MovieDetailSourcesComponent,
   ],
   imports: [
     BrowserModule,
