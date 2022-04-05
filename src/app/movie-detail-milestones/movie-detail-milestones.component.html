@@ -1,1 +1,27 @@
-<p>movie-detail-milestones works!</p>
+<h4>Milestones</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>QA Vendor</th>
+      <th>QA Status</th>
+      <th>Portal</th>
+      <th>Portal Status</th>
+      <th>Release</th>
+      <th>Release Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of childMovie?.milestones">
+      <td>{{ item.sku }}</td>
+      <td>{{ item.qavendor }}</td>
+      <td>{{ item.qastatus }}</td>
+      <td>{{ item.portal }}</td>
+      <td>{{ item.portalstatus }}</td>
+      <td>{{ item.release }}</td>
+      <td>{{ item.releasestatus }}</td>
+    </tr>
+  </tbody>
+</table>
+<br />

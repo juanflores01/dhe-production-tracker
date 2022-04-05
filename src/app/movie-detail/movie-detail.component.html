@@ -2,7 +2,7 @@
   <h1>Details for {{ movie?.name }}</h1>
 
   <br />
-  <h4>General Info (hard-coded)</h4>
+  <!-- <h4>General Info (hard-coded)</h4>
   <table class="table">
     <thead>
       <th>Item</th>
@@ -32,96 +32,15 @@
       </tr>
     </tbody>
   </table>
-  <br />
+  <br /> -->
 
-  <h4>Milestones</h4>
+  <app-movie-detail-milestones
+    [childMovie]="movie"
+  ></app-movie-detail-milestones>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th>SKU</th>
-        <th>QA Vendor</th>
-        <th>QA Status</th>
-        <th>Portal</th>
-        <th>Portal Status</th>
-        <th>Release</th>
-        <th>Release Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of movie?.milestones">
-        <td>{{ item.sku }}</td>
-        <td>{{ item.qavendor }}</td>
-        <td>{{ item.qastatus }}</td>
-        <td>{{ item.portal }}</td>
-        <td>{{ item.portalstatus }}</td>
-        <td>{{ item.release }}</td>
-        <td>{{ item.releasestatus }}</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
+  <app-movie-detail-vam [childMovie]="movie"> </app-movie-detail-vam>
 
-  <app-movie-detail-vam [childMovie]="currentMovie"> </app-movie-detail-vam>
-
-  <h4>Packaging (hard-coded)</h4>
-  <table class="table">
-    <thead>
-      <th>Item</th>
-      <th>Status</th>
-      <th>Note</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Menu Audio</td>
-        <td>Pending</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <td>Background Images</td>
-        <td>Pending</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <td>Marketing Copy</td>
-        <td>Pending</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <td>Metadata</td>
-        <td>Pending</td>
-        <td>n/a</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <br />
-
-  <h4>Sources (hard-coded)</h4>
-  <table class="table">
-    <thead>
-      <th>Item</th>
-      <th>Status</th>
-      <th>Note</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>bonus-features-reel.mov</td>
-        <td>delivered</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <td>feature-director-comm.mov</td>
-        <td>Pending</td>
-        <td>n/a</td>
-      </tr>
-      <tr>
-        <td>trailers.mov</td>
-        <td>delivered</td>
-        <td>n/a</td>
-      </tr>
-    </tbody>
-  </table>
+  <app-movie-detail-packaging></app-movie-detail-packaging>
 
   <br />
   <br />

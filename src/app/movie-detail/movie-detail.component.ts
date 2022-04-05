@@ -15,8 +15,6 @@ import { FooterComponent } from '../footer/footer.component';
 export class MovieDetailComponent implements OnInit {
   movie: Movie | undefined;
 
-  currentMovie = {};
-
   constructor(
     private route: ActivatedRoute,
     private movieService: MovieService,
@@ -29,9 +27,7 @@ export class MovieDetailComponent implements OnInit {
 
   getTitle(): void {
     const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
-    this.currentMovie = this.movieService
-      .getTitle(id)
-      .subscribe((movie) => (this.movie = movie));
+    this.movieService.getTitle(id).subscribe((movie) => (this.movie = movie));
   }
 
   goBack(): void {
