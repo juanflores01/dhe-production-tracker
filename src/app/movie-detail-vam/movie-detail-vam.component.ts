@@ -7,7 +7,6 @@ import { MovieDetailComponent } from '../movie-detail/movie-detail.component';
   styleUrls: ['./movie-detail-vam.component.css'],
 })
 export class MovieDetailVamComponent implements OnInit {
-  // @Input() childMovie = '';
   @Input() childMovie = {};
   constructor() {}
 

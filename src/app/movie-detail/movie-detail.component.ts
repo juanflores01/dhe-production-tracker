@@ -15,10 +15,7 @@ import { FooterComponent } from '../footer/footer.component';
 export class MovieDetailComponent implements OnInit {
   movie: Movie | undefined;
 
-  // currentItem = 'This is from the Parent class';
   currentMovie = {};
-
-  // currentMovie2: Movie | undefined;
 
   constructor(
     private route: ActivatedRoute,
