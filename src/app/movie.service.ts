@@ -26,4 +26,8 @@ export class MovieService {
     const url = `${this.moviesUrl}/${id}`;
     return this.http.get<Movie>(url);
   }
+
+  addMovie(movie: Movie): Observable<Movie> {
+    return this.http.post<Movie>(this.moviesUrl, movie, this.httpOptions);
+  }
 }

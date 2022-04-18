@@ -6,6 +6,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { MovieInputFormComponent } from './movie-input-form/movie-input-form.component';
 import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'movie-list', component: MovieListComponent },
   { path: 'movie-detail', component: MovieDetailComponent },
   { path: 'movie-detail/:id', component: MovieDetailComponent },
+  { path: 'movie-input-form', component: MovieInputFormComponent },
 ];
 
 @NgModule({

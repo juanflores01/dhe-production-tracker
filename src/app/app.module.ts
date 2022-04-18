@@ -17,6 +17,8 @@ import { MovieDetailVamComponent } from './movie-detail-vam/movie-detail-vam.com
 import { MovieDetailMilestonesComponent } from './movie-detail-milestones/movie-detail-milestones.component';
 import { MovieDetailPackagingComponent } from './movie-detail-packaging/movie-detail-packaging.component';
 import { MovieDetailSourcesComponent } from './movie-detail-sources/movie-detail-sources.component';
+import { MovieInputFormComponent } from './movie-input-form/movie-input-form.component';
+import { MovieFormComponent } from './movie-form/movie-form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { MovieDetailSourcesComponent } from './movie-detail-sources/movie-detail
     MovieDetailMilestonesComponent,
     MovieDetailPackagingComponent,
     MovieDetailSourcesComponent,
+    MovieInputFormComponent,
+    MovieFormComponent,
   ],
   imports: [
     BrowserModule,

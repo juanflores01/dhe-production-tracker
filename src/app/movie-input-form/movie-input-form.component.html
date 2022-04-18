@@ -1,0 +1,108 @@
+<div class="container">
+  <h2>Movie Input Form</h2>
+  <p>Set up for vary basic production flow.</p>
+  <form>
+    <div class="input-group mb-3 flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">Group</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="... input should create new dropdown item"
+        aria-label="Group"
+        aria-describedby="addon-wrapping"
+        #movieGroup
+      />
+    </div>
+
+    <div class="input-group mb-3 flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">Name</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="... of VAM"
+        aria-label="Name"
+        aria-describedby="addon-wrapping"
+        #movieName
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Type</label>
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">Video</option>
+        <option value="2">Audio</option>
+        <option value="3">Image</option>
+      </select>
+    </div>
+
+    <!-- <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Language</label>
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">English</option>
+        <option value="2">Spanish</option>
+        <option value="3">French</option>
+      </select>
+    </div> -->
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01"
+        >Deliverable</label
+      >
+      <select class="form-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">Ready for Production</option>
+        <option value="2">In Progress</option>
+        <option value="3">Ready for QA</option>
+        <option value="4">QA in Progress</option>
+        <option value="5">QA Failed</option>
+        <option value="6">QA Passed</option>
+        <option value="7">Complete</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Proxy</label>
+      <select class="form-select" id="inputGroupSelect02">
+        <option selected>Choose...</option>
+        <option value="1">Pending</option>
+        <option value="2">In Progress</option>
+        <option value="3">Complete</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">ITT</label>
+      <select class="form-select" id="inputGroupSelect03">
+        <option selected>Choose...</option>
+        <option value="1">Pending</option>
+        <option value="2">In Progress</option>
+        <option value="3">Ready for QA</option>
+        <option value="4">QA in Progress</option>
+        <option value="5">QA Failed</option>
+        <option value="6">QA Passed</option>
+        <option value="7">Complete</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Thumbnail</label>
+      <select class="form-select" id="inputGroupSelect04">
+        <option selected>Choose...</option>
+        <option value="1">Pending</option>
+        <option value="2">Received</option>
+      </select>
+    </div>
+
+    <div class="d-grid gap-2">
+      <button
+        class="btn btn-outline-primary"
+        type="button"
+        (click)="add(movieName.value); movieName.value = ''"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</div>
